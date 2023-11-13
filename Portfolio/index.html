@@ -1,0 +1,240 @@
+<DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA_Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, intial-scale=1.0">
+            <title>Portfolio</title>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                }
+
+                body {
+                    background-color: rgb(0, 0, 33);
+                    color: white;
+                    font-family: 'Poppins', sans-serif;
+                }
+
+                nav {
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    height: 70;
+                    background-color: rgb(5, 3, 57);
+                }
+
+                header nav ul {
+                    display: flex;
+                    justify-content: center;
+                }
+
+                header nav ul li {
+                    list-style: none;
+                    margin: 0 25px;
+                }
+                
+                header nav ul li a{
+                    text-decoration: none;
+                    color: rgb(211, 246, 37);
+                }
+
+                header nav ul li a:hover{
+                    color: rgb(28, 30, 159);
+                }
+
+                main hr {
+                    height: 1px;
+                    padding: 1px;
+                  background-color: #d21edf;
+                }
+
+                .left {
+                    font-size: 1.5rem;
+                }
+
+                .firstSection {
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 23px 0;
+                }
+
+                .leftSection {
+                    margin: 70px;
+                    font-size: 2rem;
+                    align-items: center;
+                }
+
+                button {
+                    color: #e5dde6;
+                    margin: 40px ;
+                    position: relative;
+                    text-decoration: underline;
+                    padding: 8px;
+                    border-width: 0.85px;
+                    background-color: #07097e;
+                    border-radius: 5px;
+                    font-size: 21px;
+                    border-color: white;
+                }
+                button a {
+                    color: white;
+                }
+
+                main button a:hover {
+                    color: rgb(53, 185, 124);
+                }
+
+                .rightSection img {
+                    width: 50%;
+                    margin: 70px 200px;
+                }
+
+                .colourName {
+                    color: rgb(99, 237, 117);
+                }
+
+                .SecondSection{
+                    margin: 45px;
+                    height: 50vh;
+                }
+                .SecondSection h1 {
+                    font-size: 60px;
+                }
+                .SecondSection .box {
+                    background-color: white;
+                    height:2px;
+                    width: 150vh;
+                    margin: 30px;
+                }
+
+                .SecondSection .vertical {
+                    height: 25px;
+                    background-color: white;
+                    width: 2px;
+                    display: flex;
+                    margin: 0 200px;
+                }
+                .vertical-title {
+                    position: relative;
+                    top: 25px;
+                    right: 20px;
+                    font-style:oblique;
+                    text-decoration:solid;
+                    color: aqua;
+                    width: 200px;
+                
+                }
+                
+                 .vertical-text {
+                    position: relative;
+                    top: 80px;
+                    right: 89px;
+                    color: rgb(247, 219, 245);
+                    width: 100px;
+                    font-size: 10px;
+                }
+                
+                footer {
+                    background-color: #15103f;
+                    justify-content: center;
+                    height: 20vh;
+                }
+
+                footer hr {
+                    height: 1px;
+                    padding: 1px;
+                  background-color: #d21edf;   
+                }
+
+                .footer {
+                display: flex;
+                margin: 10px 20px;
+                justify-content: space-around;
+                text-decoration: none;
+                }
+                .footer .footer-first {
+                    text-decoration: none;
+                    position: relative;
+                    left: 220px;
+                    color: rgb(228, 220, 211);
+                }
+
+                .footer .footer-second {
+                    position: relative;
+                    right: 290px
+                }
+
+                footer div a {
+                    color: rgb(236, 207, 158);
+                    text-decoration: none;
+                }
+                div a:hover {
+                    color: #7f73f1;
+                }
+                
+            </style>
+        </head>
+
+        <body>
+            <header>
+                <nav>
+                    <div class="left">Ashutosh's Portfolio</div>
+                    <div class="right">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="#SecondSection">Skills</a></li>
+                            <li><a href="#footer">Contact Me</a></li>
+                        </ul>
+                    </div>
+
+                </nav>
+            </header>
+
+            <main>
+                <section class="firstSection">
+                    <div class="leftSection">
+                        Hello! I am <span class="colourName">Ashutosh Kumar.</span> 
+                        I am currently Pursuing my B.Tech.
+                        I am interested in software development.
+                        <button class="btn"><a href="" target="_blank">Resume</a></button>
+                    </div>
+                    <div class="rightSection">
+                        <img src="Programming-amico.png.png" alt="Programming-amico.png">
+                    </div>
+                </section>
+
+                <hr>
+
+                <section id="SecondSection" class="SecondSection">
+                    <h1>Skills </h1>
+                    <div class="box">
+                        <div class="vertical">
+                            <div class="vertical-title">Frontend Developer</div>
+                            <div class="Vertical-text">Knows about the html,css and java-script.</div>
+                            <div class="vertical">
+                                <div class="vertical-title">Java Developer</div>
+                                <div class="vertical-text">Knows about the basics of java, Collection Framework and the GUI.</div>
+                            </div>
+                            <div class="vertical">
+                                <div class="vertical-title">Backend Developer</div>
+                                <div class="vertical-text">Knows about the MongoDB,SQL and MySQL.</div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer>
+                <hr>
+                <div id="footer" class="footer">
+                   <div class="footer-first"><a href="http://www.linkedin.com/in/ashu95078" target="_blank">Linkdin</a></div>
+                   <div class="footer-Second"><a href="https://github.com/Ashu9507/Projects.git" target="_blank">Github</a></div>
+                    </ul>
+                </div>
+            </footer>
+        </body>
+    </html>
